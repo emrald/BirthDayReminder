@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="20"
+            android:padding="15dp"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="@drawable/create_shape"
+                android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCC9C9" />
+-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <ImageView
+                android:id="@+id/img_frnd"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:contextClickable="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/create_shape_iamge"
+                android:src="@drawable/image" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+               android:layout_toRightOf="@+id/img_frnd"
+                android:hint="Name"
+               android:layout_alignBottom="@+id/img_frnd"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      Click"
+                android:id="@+id/tv_click"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/edt_name"
+                android:layout_alignLeft="@+id/img_frnd"
+                android:layout_alignStart="@+id/img_frnd" />-->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCC9C9" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:textSize="20sp"
+    android:textStyle="italic"
+    android:id="@+id/tv_datepicker"
+    android:text="Birth Date"/>
+        <!--<DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCC9C9" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:id="@+id/tv_timepicker"
+            android:text="Reminder Time"/>
+
+       <!-- <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />-->
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCC9C9" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+                android:gravity="center_horizontal"
+            android:id="@+id/tv_cancel"
+            android:textColor="#009788"
+            android:textStyle="italic"
+            android:layout_weight="1"
+            android:background="#ECECEC"
+                android:layout_marginRight="2dp"
+            android:textSize="20sp"
+            android:text="Cancel"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/tv_add"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="italic"
+                android:background="#009788"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:text="  Add  "/>
+
+            </LinearLayout>
+    </LinearLayout>
+                </LinearLayout>
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/image_close"
+           android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:src="@drawable/big_logo" />
+    </FrameLayout>
+</LinearLayout>
